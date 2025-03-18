@@ -22,6 +22,24 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/app/ProfileCard.js",
+    "src/app/not-found.js",
+    "src/app/[locale]/about/page.tsx",
+    "src/app/[locale]/about/AboutContainer.jsx",
+    "src/app/[locale]/about/LikeHateList.js",
+    "src/app/[locale]/about/MotionImage.js",
+    "src/app/[locale]/resume/page.js",
+    "src/app/[locale]/resume/WorkExpSection.jsx",
+    "src/app/[locale]/resume/WorkExpItem.js",
+    "src/components/widgets/LocaleSwitch.js",
+    "src/components/widgets/Navbar.js",
+    "src/app/[locale]/[...rest]/page.js",
+    "src/app/[locale]/resume/components/work-section.js"
+  ],
   "exclude": ["node_modules"]
 }

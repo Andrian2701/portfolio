@@ -1,0 +1,79 @@
+{
+  "Header": {
+    "logo": "こんにちは。私はアンドリアンです",
+    "about": "私について",
+    "resume": "履歴書",
+    "skills": "スキル"
+  },
+  "HomePage": {
+    "name": "アンドリアン・スメタニュク",
+    "position": "リヴィウのフロントエンド開発者"
+  },
+  "AboutPage": {
+    "title": "こんにちは。アンドリアンです。",
+    "about": "概要",
+    "description": "私はフロントエンド開発者で、レスポンシブで高性能なWebアプリケーションの構築経験があります。私はウクライナ語を母語とし、英語を第二言語としています",
+    "extendedVersion": "詳細バージョン",
+    "whereImFrom": "出身地は？",
+    "whereImFromDescription": "私はウクライナのトルマチで生まれましたが、2歳までコロミヤで育ちました。その後、リヴィウに引っ越し、そこで小学校、中学校、高校を卒業しました。卒業後、リヴィウ工科大学に入学し、現在もフロントエンド開発者として働きながら勉強を続けています。",
+    "preferences": "私の好みは？",
+    "iLike": "好きです...",
+    "preferencesList": {
+      "sports": "運動すること",
+      "culture": "日本文化",
+      "nature": "自然の中で過ごすこと",
+      "saturdays": "週末",
+      "music": "Nelly Furtado x Quarterhead - All Good Things"
+    },
+    "dislikes": "私の苦手なことは？",
+    "iDislike": "私は好きではありません...",
+    "dislikesList": {
+      "cold": "寒さ",
+      "alarm": "目覚まし時計で起きること"
+    }
+  },
+  "NotFoundPage": {
+    "notFoundTitle": "探しているページは見つかりませんでした...",
+    "redirectHome": "私を取り戻してください"
+  },
+  "ResumePage": {
+    "title": "履歴書",
+    "workExperience": "職歴",
+    "education": "学歴",
+    "employmentPrefix": "正社員",
+    "present": "現在",
+    "to": "～",
+    "work": {
+      "work-1": {
+        "company": "Insiders Company",
+        "employmentDetails": "契約 2024年11月 〜 現在, フロントエンド開発者",
+        "details": "契約のもとで働き、アプリを jQuery から Next.js に移行する作業に関わりました。また、新機能を備えたモダンな UI の作成にも携わりました。"
+      }
+    },
+    "edu": {
+      "edu-1": {
+        "eduPlace": "リヴィウ工科国立大学",
+        "duration": "2022年9月 〜 2026年6月",
+        "details": "技術英語、コンピューターサイエンス、プログラミング。"
+      }
+    }
+  },
+  "SkillsPage": {
+    "skills": "スキル",
+    "skillCategories": {
+      "Languages": "言語",
+      "Frameworks": "フレームワーク",
+      "Libraries": "ライブラリ",
+      "UI Libraries": "UIライブラリ",
+      "Tools": "ツール"
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "言語を変更",
+    "locale": "{locale, select, jp {🇯🇵} en {🇺🇸} uk {🇺🇦} other {不明}}"
+  },
+  "Metadata": {
+    "title": "ポートフォリオ | andrian-smetaniuk",
+    "description": "アンドリアン・スメタニュークの個人ウェブサイト"
+  }
+}

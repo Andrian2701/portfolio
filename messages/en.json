@@ -1,0 +1,79 @@
+{
+  "Header": {
+    "logo": "Hi. I'm Andrian",
+    "about": "About me",
+    "resume": "Resume",
+    "skills": "Skills"
+  },
+  "HomePage": {
+    "name": "Andrian Smetaniuk",
+    "position": "Frontend developer in Lviv"
+  },
+  "AboutPage": {
+    "title": "Hi. I'm Andrian",
+    "about": "About",
+    "description": "I'm a frontend developer, with experience in building responsive, high-performance web applications. I'm a native Ukrainian speaker with English as my second language",
+    "extendedVersion": "Extended version",
+    "whereImFrom": "Where I'm from?",
+    "whereImFromDescription": "I was born in Tlumach, Ukraine, but grew up in Kolomyia until the age of 2. Afterwards, I moved to Lviv, where I attended primary, secondary, and high school. After graduating, I enrolled at Lviv Polytechnic University, where I am still studying while working as a Frontend developer.",
+    "preferences": "My preferences?",
+    "iLike": "I like...",
+    "preferencesList": {
+      "sports": "Exercising",
+      "culture": "Japanese culture",
+      "nature": "Spending time in nature",
+      "saturdays": "Weekends",
+      "music": "Nelly Furtado x Quarterhead - All Good Things"
+    },
+    "dislikes": "My dislikes?",
+    "iDislike": "I dont't like...",
+    "dislikesList": {
+      "cold": "Cold",
+      "alarm": "Waking up to an alarm"
+    }
+  },
+  "NotFoundPage": {
+    "notFoundTitle": "Page you're looking for was not found...",
+    "redirectHome": "Get me back"
+  },
+  "ResumePage": {
+    "title": "Resume",
+    "workExperience": "Work Experience",
+    "education": "Education",
+    "employmentPrefix": "Full time",
+    "present": "present",
+    "to": "-",
+    "work": {
+      "work-1": {
+        "company": "Insiders Company",
+        "employmentDetails": "Contract Nov 2024 - present, Frontend developer",
+        "details": "I worked worked under a contract, where I was involved in upgrading the app from jQuery to Next.js, as well as creating a modern UI with new features."
+      }
+    },
+    "edu": {
+      "edu-1": {
+        "eduPlace": "Lviv Polytechnic National University",
+        "duration": "Sep 2022 - June 2026",
+        "details": "Technical English, Computer Science and Programming."
+      }
+    }
+  },
+  "SkillsPage": {
+    "skills": "Skills",
+    "skillCategories": {
+      "Languages": "Languages",
+      "Frameworks": "Frameworks",
+      "Libraries": "Libraries",
+      "UI Libraries": "UI Libraries",
+      "Tools": "Tools"
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, jp {🇯🇵} en {🇺🇸} uk {🇺🇦} other {Unknown}}"
+  },
+  "Metadata": {
+    "title": "Portfolio | andrian-smetaniuk",
+    "description": "Andrian Smetaniuk's personal website"
+  }
+}
