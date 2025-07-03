@@ -68,10 +68,6 @@
       "Tools": "Tools"
     }
   },
-  "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, jp {🇯🇵} en {🇺🇸} uk {🇺🇦} other {Unknown}}"
-  },
   "Metadata": {
     "title": "Portfolio | andrian-smetaniuk",
     "description": "Andrian Smetaniuk's personal website"

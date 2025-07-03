@@ -39,7 +39,10 @@
     "src/components/widgets/LocaleSwitch.js",
     "src/components/widgets/Navbar.js",
     "src/app/[locale]/[...rest]/page.js",
-    "src/app/[locale]/resume/components/work-section.js"
+    "src/app/[locale]/resume/components/work-section.js",
+    "src/.d.ts",
+    "src/.d.ts",
+    "src/app/[locale]/bg-provider.txs"
   ],
   "exclude": ["node_modules"]
 }

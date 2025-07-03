@@ -68,10 +68,6 @@
       "Tools": "Інструменти"
     }
   },
-  "LocaleSwitcher": {
-    "label": "Змінити мову",
-    "locale": "{locale, select, jp {🇯🇵} en {🇺🇸} uk {🇺🇦} other {Невідомо}}"
-  },
   "Metadata": {
     "title": "Портфоліо | andrian-smetaniuk",
     "description": "Персональний вебсайт Андріана Сметанюка"

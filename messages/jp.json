@@ -68,10 +68,6 @@
       "Tools": "ツール"
     }
   },
-  "LocaleSwitcher": {
-    "label": "言語を変更",
-    "locale": "{locale, select, jp {🇯🇵} en {🇺🇸} uk {🇺🇦} other {不明}}"
-  },
   "Metadata": {
     "title": "ポートフォリオ | andrian-smetaniuk",
     "description": "アンドリアン・スメタニュークの個人ウェブサイト"

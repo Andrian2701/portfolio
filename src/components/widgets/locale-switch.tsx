@@ -1,16 +1,19 @@
 'use client';
 
-import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger, DropdownMenuItem } from "@/components/ui/dropdown-menu";
-import { useParams } from 'next/navigation';
 import { useTransition } from 'react';
+import { useParams } from 'next/navigation';
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
-import { useLocale, useTranslations } from 'next-intl';
-import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import { useLocale } from 'next-intl';
+
+const localeCycle = {
+  en: 'uk',
+  uk: 'jp',
+  jp: 'en'
+};
 
 export const LocaleSwitch = () => {
   const [isPending, startTransition] = useTransition();
-  const t = useTranslations('LocaleSwitcher');
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -31,20 +34,13 @@ export const LocaleSwitch = () => {
   }
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild disabled={isPending}>
-        <span className="flex items-center cursor-pointer">
-          {t("locale", { locale })}
-          <MdOutlineKeyboardArrowDown className="text-primary" />
-        </span>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent className="bg-[#fafafa] p-2 mt-2 sm:mt-4 ml-10 sm:ml-0 w-auto min-w-[80px]">
-        {routing.locales.map((cur) => (
-          <DropdownMenuItem key={cur} onClick={() => onLangChange({ target: { value: cur } })} className="flex justify-center cursor-pointer hover:underline transition delay-150 duration-300 ease-in-out">
-            {t("locale", { locale: cur })}
-          </DropdownMenuItem>
-        ))}
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <button
+      disabled={isPending}
+      className="control-btn"
+      onClick={() => {
+        onLangChange({ target: { value: localeCycle[locale as keyof typeof localeCycle] || routing.locales[0] } });
+      }}>
+      {locale.toUpperCase()}
+    </button >
   );
 };

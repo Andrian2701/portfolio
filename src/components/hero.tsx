@@ -34,7 +34,7 @@ export const Hero = () => {
   const t = useTranslations('HomePage');
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 z-20">
       <div className="flex flex-col items-center gap-8">
         <Avatar className="w-[220px] h-[220px] sm:w-[240px] sm:h-[240px] overflow-hidden aspect-square">
           <AvatarImage
