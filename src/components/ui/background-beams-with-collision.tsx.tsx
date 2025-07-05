@@ -163,15 +163,17 @@ const CollisionMechanism = React.forwardRef<
 
     useEffect(() => {
         if (collision.detected && collision.coordinates) {
-            setTimeout(() => {
+            const timeout = setTimeout(() => {
                 setCollision({ detected: false, coordinates: null });
                 setCycleCollisionDetected(false);
-            }, 2000);
-
-            setTimeout(() => {
                 setBeamKey((prevKey) => prevKey + 1);
             }, 2000);
+
+            return () => {
+                clearTimeout(timeout)
+            };
         }
+
     }, [collision]);
 
     return (

@@ -2,9 +2,9 @@ import { ReactNode } from "react";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
-import { BackgroundWrapper } from "../components/background-wrapper";
 import { ThemeProvider } from "@/providers/theme-provider";
-import { BackgroundProvider } from "@/providers/background-provider";
+import { AppBackgroundProvider } from "@/providers/app-background-provider";
+import { AppBackground } from "@/components/app-background";
 
 export const Providers = async ({ children }: { children: ReactNode }) => {
     const messages = await getMessages();
@@ -17,11 +17,11 @@ export const Providers = async ({ children }: { children: ReactNode }) => {
                 enableSystem
                 disableTransitionOnChange
             >
-                <BackgroundProvider>
-                    <BackgroundWrapper>
+                <AppBackgroundProvider>
+                    <AppBackground>
                         {children}
-                    </BackgroundWrapper>
-                </BackgroundProvider>
+                    </AppBackground>
+                </AppBackgroundProvider>
             </ThemeProvider>
         </NextIntlClientProvider>
     )

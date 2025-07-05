@@ -4,16 +4,17 @@ import { ReactNode } from "react";
 
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision.tsx";
 import { BackgroundBeams } from "@/components/ui/background-beams";
-import { useBackground } from "@/providers/background-provider";
 import { AppControl } from "./widgets/app-control";
+import { useAppBackground } from "@/providers/app-background-provider";
+import { AppBackgroundEnum } from "@/types";
 
-export const BackgroundWrapper = ({ children }: { children: ReactNode }) => {
-    const { bg } = useBackground();
+export const AppBackground = ({ children }: { children: ReactNode }) => {
+    const { appBackground } = useAppBackground();
 
     return (
         <>
             <AppControl />
-            {bg === 'beams' ? (
+            {appBackground === AppBackgroundEnum.beams ? (
                 <div className="min-h-screen flex flex-col relative bg-background">
                     {children}
                     <BackgroundBeams />

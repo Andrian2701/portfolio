@@ -1,61 +1,34 @@
-import React from 'react';
+'use client'
+
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
-import { DropdownMenuItem } from '../ui/dropdown-menu';
 
-interface NavItem {
-  name: string;
-  path: string;
+import { navLinks } from '@/constants';
+
+interface Props {
+  isMobileView?: boolean
+  handleDrawerClose?: VoidFunction
 }
 
-export const navItems: NavItem[] = [
-  {
-    name: 'About me',
-    path: 'about',
-  },
-  {
-    name: 'Resume',
-    path: 'resume',
-  },
-  {
-    name: 'Skills',
-    path: 'skills',
-  },
-];
-
-export const Navbar = ({ isDrop = false }: { isDrop?: boolean }) => {
+export const Navbar = ({ isMobileView = false, handleDrawerClose }: Props) => {
   const t = useTranslations('Header');
   const locale = useLocale()
 
   return (
     <ul
-      className={
-        isDrop ? 'flex flex-col gap-4' : 'hidden sm:flex items-center sm:gap-8'
-      }
+      className={isMobileView ? 'flex flex-col items-center justify-center gap-8 h-full w-full' : 'hidden sm:flex gap-8'}
     >
-      {navItems.map((item) => {
-        const linkName = t(item.path);
-        const path = `/${locale}/${item.path}`
-
-        return isDrop ? (
-          <DropdownMenuItem asChild key={item.path}>
-            <Link
-              href={path}
-              className="hover:underline font-light transition delay-150 duration-300 ease-in-out text-primary cursor-pointer"
-            >
-              {linkName}
-            </Link>
-          </DropdownMenuItem>
-        ) : (
+      {navLinks.map((item) => (
+        <li key={item.path}>
           <Link
-            key={item.path}
-            href={path}
-            className="hover:underline font-light transition delay-150 duration-300 ease-in-out text-primary cursor-pointer"
+            href={`/${locale}/${item.path}`}
+            onClick={handleDrawerClose}
+            className={`${isMobileView ? "text-lg" : "text-base"} font-light text-text-secondary hover:text-text-hover`}
           >
-            {linkName}
+            {t(item.path)}
           </Link>
-        );
-      })}
+        </li>
+      ))}
     </ul>
   );
 };

@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/widgets/header";
+import { Footer } from "@/components/ui/footer";
 import { Providers } from "../../providers/providers";
+import { LocaleType } from "@/types";
 import "./globals.css";
 
 const inter = Inter({ subsets: ['latin'] })
@@ -33,7 +35,7 @@ const RootLayout = async ({
 }: { children: React.ReactNode, params: Promise<{ locale: string }> }) => {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as "en" | "jp" | "uk")) {
+  if (!routing.locales.includes(locale as LocaleType)) {
     notFound();
   }
 
@@ -45,7 +47,7 @@ const RootLayout = async ({
         <Providers>
           <Header />
           {children}
-          <footer className="px-[40px] py-[20px]"></footer>
+          <Footer />
         </Providers>
       </body>
     </html >
