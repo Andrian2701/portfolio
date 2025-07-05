@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
-import { skills } from './mocks';
+
 import { SkillCard } from './skill-card';
+import { skills } from '@/constants';
 
 export const SkillsContainer = () => {
   const t = useTranslations('SkillsPage');

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { socialsLinks } from '@/constants';
-import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarImage } from '../ui/avatar';
 
 export const Hero = () => {
   const t = useTranslations('HomePage');

@@ -2,13 +2,13 @@
 
 import { ReactNode } from "react";
 
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision.tsx";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import { AppControl } from "./widgets/app-control";
+import { AppControl } from "../components/layout/app-control";
+import { BackgroundBeams } from "../components/ui/background-beams";
+import { BackgroundBeamsWithCollision } from "../components/ui/background-beams-with-collision.tsx";
 import { useAppBackground } from "@/providers/app-background-provider";
 import { AppBackgroundEnum } from "@/types";
 
-export const AppBackground = ({ children }: { children: ReactNode }) => {
+export const AppWrapper = ({ children }: { children: ReactNode }) => {
     const { appBackground } = useAppBackground();
 
     return (

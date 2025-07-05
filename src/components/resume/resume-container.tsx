@@ -1,7 +1,8 @@
-import { Separator } from "@/components/ui/separator";
+import { useTranslations } from 'next-intl';
+
 import { WorkSection } from "./work-section";
 import { EduSection } from "./edu-section";
-import { useTranslations } from 'next-intl';
+import { Separator } from "../ui/separator";
 
 export const ResumeContainer = () => {
   const t = useTranslations('ResumePage');
@@ -17,9 +18,7 @@ export const ResumeContainer = () => {
         </h2>
         <WorkSection />
       </div>
-
       <Separator className="bg-[#dbd9d9]" />
-
       <h1 className="text-primary font-bold text-[30px] sm:text-[37px] tracking-wide">
         {t('education')}
       </h1>

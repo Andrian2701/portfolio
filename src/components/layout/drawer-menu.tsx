@@ -13,7 +13,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 
-export const HamburgerMenu = () => {
+export const DrawerMenu = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const handleDrawerClose = () => setIsDrawerOpen(false)
