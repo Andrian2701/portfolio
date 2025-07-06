@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode, useState, createContext, useContext, useEffect } from "react";
+
 import { AppBackgroundEnum } from "@/types";
 
 interface AppBagContextInterface {
@@ -21,11 +22,11 @@ export const useAppBackground = () => {
 };
 
 export const AppBackgroundProvider = ({ children }: { children: ReactNode }) => {
-  const [appBackground, setAppBackground] = useState<AppBackgroundEnum>(AppBackgroundEnum.beams);
+  const [appBackground, setAppBackground] = useState<AppBackgroundEnum>(AppBackgroundEnum.lines);
 
   useEffect(() => {
     const storedBg = localStorage.getItem('app-background') as AppBackgroundEnum
-    return storedBg ? setAppBackground(storedBg) : setAppBackground(AppBackgroundEnum.beams)
+    return storedBg ? setAppBackground(storedBg) : setAppBackground(AppBackgroundEnum.lines)
   }, [])
 
   return (

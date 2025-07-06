@@ -10,7 +10,7 @@ export const Header = () => {
   const locale = useLocale();
 
   return (
-    <header className="p-4 sm:p-6 w-full">
+    <header className="p-4 sm:p-6 w-full z-20">
       <nav className="flex justify-between mx-auto w-full max-w-3xl">
         <Link href={`/${locale}`} className='flex items-center gap-2 text-sm sm:text-lg'>
           <FaTerminal className='text-text-hover' />

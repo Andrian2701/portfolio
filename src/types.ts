@@ -1,6 +1,6 @@
 export enum AppBackgroundEnum {
+  lines = "lines",
   beams = "beams",
-  collision = "beam-collision",
 }
 
 export type LocaleType = "en" | "jp" | "uk";
