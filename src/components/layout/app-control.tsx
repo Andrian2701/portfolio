@@ -20,7 +20,7 @@ export const AppControl = () => {
   };
 
   return (
-    <div className="flex sm:flex-col gap-4 fixed z-20 left-1/2 -translate-x-1/2 bottom-14 sm:left-auto sm:translate-x-0 sm:bottom-auto sm:top-1/2 sm:right-10 sm:-translate-y-1/2">
+    <div className="flex sm:flex-col gap-4 fixed z-30 left-1/2 -translate-x-1/2 bottom-14 sm:left-auto sm:translate-x-0 sm:bottom-auto sm:top-1/2 sm:right-10 sm:-translate-y-1/2">
       <LocaleSwitch />
       <ThemeSwitch />
       <button

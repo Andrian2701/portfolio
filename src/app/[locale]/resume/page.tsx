@@ -1,9 +1,29 @@
-import { ResumeContainer } from '@/components/resume/resume-container';
+import { useTranslations } from 'next-intl';
+
+import { Education, ResumePdfFile, WorkExperience } from '@/components/resume';
+import { Separator } from '@/components/ui/separator';
 
 const Resume = () => {
+  const t = useTranslations('ResumePage');
+
   return (
-    <div className="w-full max-w-[800px] text-left p-5 mx-auto flex-auto flex flex-col gap-8">
-      <ResumeContainer />
+    <div className="w-full max-w-[800px] text-left p-5 mx-auto flex-auto flex flex-col gap-8 z-20">
+      <h1 className="text-text-primary font-bold text-2xl sm:text-3xl tracking-wide mt-12">
+        {t('title')}
+      </h1>
+      <div className="flex flex-col gap-6">
+        <h2 className="text-text-primary font-semibold text-lg sm:text-xl tracking-wide">
+          {t('workExperience')}
+        </h2>
+        <WorkExperience />
+      </div>
+      <Separator className="bg-[#dbd9d9]" />
+      <h1 className="text-text-primary font-bold text-2xl sm:text-3xl tracking-wide mt-12">
+        {t('education')}
+      </h1>
+      <Education />
+      <Separator className="bg-[#dbd9d9]" />
+      <ResumePdfFile />
     </div>
   );
 };

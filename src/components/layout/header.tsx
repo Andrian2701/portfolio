@@ -14,7 +14,7 @@ export const Header = () => {
       <nav className="flex justify-between mx-auto w-full max-w-3xl">
         <Link
           href={`/${locale}`}
-          className="flex items-center gap-2 text-sm sm:text-lg"
+          className="flex items-center gap-2 text-sm sm:text-lg tracking-wide"
         >
           <FaTerminal className="text-text-hover" />
           <span className="font-bold text-text-primary">{t('logo')}</span>

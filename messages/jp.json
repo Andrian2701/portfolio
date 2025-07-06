@@ -43,16 +43,27 @@
     "employmentPrefix": "正社員",
     "present": "現在",
     "to": "～",
+    "resumeUploadErrMessage": "履歴書を読み込めませんでした。",
+    "viewOnlineOption": "代わりにオンラインで表示",
+    "fullResumeOption": "完全な履歴書",
     "work": {
       "work-1": {
-        "company": "Insiders Company",
-        "employmentDetails": "契約 2024年11月 〜 現在, フロントエンド開発者",
-        "details": "契約のもとで働き、アプリを jQuery から Next.js に移行する作業に関わりました。また、新機能を備えたモダンな UI の作成にも携わりました。"
+        "company": "Insiders",
+        "companyLink": "https://www.insiders.software/home",
+        "employmentDetails": "フルタイム 2024年9月～2025年4月、フロントエンド開発者",
+        "details": "カナダの建設会社向けの社内プラットフォームの開発に携わり、スタッフの業務効率とユーザー体験の向上を目指しました。"
+      },
+      "work-2": {
+        "company": "GlobalLogic",
+        "companyLink": "https://www.globallogic.com/",
+        "employmentDetails": "フルタイム 2025年7月～現在、トレイニーフロントエンド開発者",
+        "details": ""
       }
     },
     "edu": {
       "edu-1": {
         "eduPlace": "リヴィウ工科国立大学",
+        "eduPlaceLink": "https://lpnu.ua/en",
         "duration": "2022年9月 〜 2026年6月",
         "details": "技術英語、コンピューターサイエンス、プログラミング。"
       }

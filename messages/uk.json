@@ -43,16 +43,27 @@
     "employmentPrefix": "Повна зайнятість",
     "present": "зараз",
     "to": "-",
+    "resumeUploadErrMessage": "Не вдалося завантажити резюме.",
+    "viewOnlineOption": "Переглянути онлайн",
+    "fullResumeOption": "Повне резюме",
     "work": {
       "work-1": {
-        "company": "Insiders Company",
-        "employmentDetails": "Контракт, листопад 2024 – дотепер, Фронтенд-розробник",
-        "details": "Я працював за контрактом, де брав участь у модернізації застосунку, мігруючи його з jQuery на Next.js. Також займався створенням сучасного UI з новими функціями."
+        "company": "Insiders",
+        "companyLink": "https://www.insiders.software/home",
+        "employmentDetails": "Повна зайнятість, вересень 2024 – квітень 2025, Frontend-розробник",
+        "details": "Я брав участь у розробці внутрішньої платформи для канадської будівельної компанії, яка була спрямована на покращення роботи персоналу та користувацького досвіду."
+      },
+      "work-2": {
+        "company": "GlobalLogic",
+        "companyLink": "https://www.globallogic.com/",
+        "employmentDetails": "Повна зайнятість, з липня 2025 – дотепер, Trainee Frontend-розробник",
+        "details": ""
       }
     },
     "edu": {
       "edu-1": {
         "eduPlace": "Національний університет «Львівська політехніка»",
+        "eduPlaceLink": "https://lpnu.ua/en",
         "duration": "Вересень 2022 – Червень 2026",
         "details": "Технічна англійська, комп'ютерні науки та програмування."
       }

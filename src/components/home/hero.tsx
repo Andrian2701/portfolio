@@ -17,12 +17,14 @@ export const Hero = () => {
             className="w-full h-full object-cover"
           />
         </Avatar>
-        <h1 className="text-text-primary font-bold text-2xl sm:text-4xl">
+        <h1 className="text-text-primary font-bold text-2xl sm:text-4xl tracking-wide">
           {t('name')}
         </h1>
       </div>
       <div className="flex flex-col items-center gap-4">
-        <p className="font-light text-text-hover text-base">{t('position')}</p>
+        <p className="font-light text-text-hover text-base tracking-wide">
+          {t('position')}
+        </p>
         <div className="flex gap-8">
           {socialsLinks.map((item) => {
             const Icon = item.icon;

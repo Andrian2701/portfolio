@@ -43,16 +43,27 @@
     "employmentPrefix": "Full time",
     "present": "present",
     "to": "-",
+    "resumeUploadErrMessage": "Couldn't load resume.",
+    "viewOnlineOption": "View online instead",
+    "fullResumeOption": "Full resume",
     "work": {
       "work-1": {
-        "company": "Insiders Company",
-        "employmentDetails": "Contract Nov 2024 - present, Frontend developer",
-        "details": "I worked worked under a contract, where I was involved in upgrading the app from jQuery to Next.js, as well as creating a modern UI with new features."
+        "company": "Insiders",
+        "companyLink": "https://www.insiders.software/home",
+        "employmentDetails": "Full-time Sep 2024 - Apr 2025, Frontend developer",
+        "details": "I was involved in developing an internal platform for a Canadian construction company aimed to improve staff operations and user experience."
+      },
+      "work-2": {
+        "company": "GlobalLogic",
+        "companyLink": "https://www.globallogic.com/",
+        "employmentDetails": "Full-time July 2025 - present, Trainee Frontend Developer",
+        "details": ""
       }
     },
     "edu": {
       "edu-1": {
         "eduPlace": "Lviv Polytechnic National University",
+        "eduPlaceLink": "https://lpnu.ua/en",
         "duration": "Sep 2022 - June 2026",
         "details": "Technical English, Computer Science and Programming."
       }
