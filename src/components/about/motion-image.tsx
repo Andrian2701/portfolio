@@ -32,6 +32,6 @@ export const MotionImage = ({ src }: { src: string }) => {
         height={200}
         className="rounded-lg w-full max-w-[250px] sm:max-w-[300px] max-h-[400px] object-cover mx-auto"
       />
-    </motion.div >
+    </motion.div>
   );
 };

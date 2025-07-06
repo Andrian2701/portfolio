@@ -1,7 +1,7 @@
-import { useTranslations } from "next-intl";
-import React from "react";
+import { useTranslations } from 'next-intl';
+import React from 'react';
 
-const keys = ["edu-1"] as const
+const keys = ['edu-1'] as const;
 
 export const EduSection = () => {
   const t = useTranslations('ResumePage');
@@ -16,9 +16,7 @@ export const EduSection = () => {
           <p className="font-semibold text-primary text-sm">
             {t(`edu.${key}.duration`)}
           </p>
-          <p className="font-light text-primary">
-            {t(`edu.${key}.details`)}
-          </p>
+          <p className="font-light text-primary">{t(`edu.${key}.details`)}</p>
         </div>
       ))}
     </>

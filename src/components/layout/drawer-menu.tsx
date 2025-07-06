@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import { useState } from "react";
-import { IoCloseOutline } from "react-icons/io5";
-import { LuMenu } from "react-icons/lu";
+import { useState } from 'react';
+import { IoCloseOutline } from 'react-icons/io5';
+import { LuMenu } from 'react-icons/lu';
 
 import { Navbar } from './navbar';
 import {
@@ -11,12 +11,12 @@ import {
   DrawerContent,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
+} from '@/components/ui/drawer';
 
 export const DrawerMenu = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const handleDrawerClose = () => setIsDrawerOpen(false)
+  const handleDrawerClose = () => setIsDrawerOpen(false);
 
   return (
     <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>

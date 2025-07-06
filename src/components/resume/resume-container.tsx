@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl';
 
-import { WorkSection } from "./work-section";
-import { EduSection } from "./edu-section";
-import { Separator } from "../ui/separator";
+import { WorkSection } from './work-section';
+import { EduSection } from './edu-section';
+import { Separator } from '../ui/separator';
 
 export const ResumeContainer = () => {
   const t = useTranslations('ResumePage');

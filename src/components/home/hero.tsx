@@ -25,8 +25,7 @@ export const Hero = () => {
         <p className="font-light text-text-hover text-base">{t('position')}</p>
         <div className="flex gap-8">
           {socialsLinks.map((item) => {
-            const Icon = item.icon
-
+            const Icon = item.icon;
             return (
               <Link
                 key={item.label}
@@ -35,9 +34,9 @@ export const Hero = () => {
                 aria-label={item.label}
                 className="text-text-secondary text-lg hover:text-text-primary"
               >
-                <Icon className='text-2xl' />
+                <Icon className="text-2xl" />
               </Link>
-            )
+            );
           })}
         </div>
       </div>

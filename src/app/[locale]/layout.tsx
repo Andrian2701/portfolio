@@ -1,17 +1,21 @@
-import { Inter } from "next/font/google";
-import { getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
+import { Inter } from 'next/font/google';
+import { getTranslations } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 
-import { routing } from "@/i18n/routing";
-import { Providers } from "../../providers";
-import { LocaleType } from "@/types";
-import { Header } from "@/components/layout/header";
-import { Footer } from "@/components/layout/footer";
-import "./globals.css";
+import { routing } from '@/i18n/routing';
+import { Providers } from '../../providers';
+import { LocaleType } from '@/types';
+import { Header } from '@/components/layout/header';
+import { Footer } from '@/components/layout/footer';
+import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
-export async function generateMetadata({ params }: { params: { locale: string } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
@@ -24,15 +28,18 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       title,
       description,
       url: process.env.NEXT_PUBLIC_SITE_URL,
-      images: ""
-    }
+      images: '',
+    },
   };
 }
 
 const RootLayout = async ({
   children,
-  params
-}: { children: React.ReactNode, params: Promise<{ locale: string }> }) => {
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) => {
   const { locale } = await params;
 
   if (!routing.locales.includes(locale as LocaleType)) {
@@ -41,17 +48,15 @@ const RootLayout = async ({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body
-        className={`${inter.className}`}
-      >
+      <body className={`${inter.className}`}>
         <Providers>
           <Header />
           {children}
           <Footer />
         </Providers>
       </body>
-    </html >
+    </html>
   );
-}
+};
 
-export default RootLayout
+export default RootLayout;

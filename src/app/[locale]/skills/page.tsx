@@ -1,4 +1,4 @@
-import { SkillsContainer } from "@/components/skills/skills-container";
+import { SkillsContainer } from '@/components/skills/skills-container';
 
 const Skills = () => {
   return (

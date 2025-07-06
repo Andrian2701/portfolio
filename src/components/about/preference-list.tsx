@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 
-export const PreferenceList = ({ isLike = false }) => {
+export const PreferenceList = ({ isLike = false }: { isLike: boolean }) => {
   const t = useTranslations('AboutPage');
 
   const listKey = isLike ? 'preferencesList' : 'dislikesList';

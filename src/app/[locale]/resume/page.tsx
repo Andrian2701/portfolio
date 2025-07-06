@@ -1,4 +1,4 @@
-import { ResumeContainer } from "@/components/resume/resume-container";
+import { ResumeContainer } from '@/components/resume/resume-container';
 
 const Resume = () => {
   return (

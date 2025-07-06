@@ -11,14 +11,12 @@ const NotFound = () => {
           404
         </h1>
         <div className="flex flex-col items-center gap-4">
-          <p className="font-light text-primary">
-            {t("notFoundTitle")}
-          </p>
+          <p className="font-light text-primary">{t('notFoundTitle')}</p>
           <Link
             href="/"
             className="hover:underline font-light transition delay-150 duration-300 ease-in-out text-primary cursor-pointer"
           >
-            {t("redirectHome")}
+            {t('redirectHome')}
           </Link>
         </div>
       </div>

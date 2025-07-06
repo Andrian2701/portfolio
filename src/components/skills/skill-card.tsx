@@ -1,7 +1,6 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-export const SkillCard = ({ image, text }: { image: string, text: string }) => {
-
+export const SkillCard = ({ image, text }: { image: string; text: string }) => {
   return (
     <div className="flex flex-col items-center gap-2">
       <Image
