@@ -58,13 +58,13 @@ export const ResumePdfFile = () => {
                 onLoadSuccess={handleOnLoadSuccess}
                 onLoadError={(err) => handleOnLoadError(err)}
                 error={
-                  <span className="flex justify-center text-indigo-400 text-sm">
+                  <span className="flex justify-center text-purple text-sm">
                     {t('resumeUploadErrMessage')}
                   </span>
                 }
                 loading={
                   <span className="flex justify-center gap-2 text-sm">
-                    <Loader2Icon className="animate-spin h-6 w-6 text-indigo-400" />{' '}
+                    <Loader2Icon className="animate-spin h-6 w-6 text-purple" />{' '}
                     {t('title')}
                   </span>
                 }
@@ -81,7 +81,7 @@ export const ResumePdfFile = () => {
               <Link
                 href={pdfGoogleDriveUrl}
                 target="_blank"
-                className="hidden md:block text-indigo-400 hover:text-indigo-500 underline font-light text-base"
+                className="hidden md:block text-purple hover:text-dark-purple underline font-light text-base"
               >
                 {t('viewOnlineOption')}
               </Link>
@@ -91,7 +91,7 @@ export const ResumePdfFile = () => {
         <Link
           href={pdfGoogleDriveUrl}
           target="_blank"
-          className="block md:hidden text-indigo-400 hover:text-indigo-500 underline font-light text-base"
+          className="block md:hidden text-purple hover:text-dark-purple underline font-light text-base"
         >
           {t('fullResumeOption')}
         </Link>

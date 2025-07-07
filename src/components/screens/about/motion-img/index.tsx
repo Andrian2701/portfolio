@@ -9,7 +9,7 @@ interface Props {
   className: string;
 }
 
-export const AboutPageImage = ({ src, alt, className }: Props) => {
+export const MotionImg = ({ src, alt, className }: Props) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

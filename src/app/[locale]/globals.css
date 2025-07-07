@@ -6,7 +6,8 @@
   --color-background: #ffffff;
   --color-text-primary: #0f172a;
   --color-text-secondary: #64748b;
-  --color-text-hover: #818cf8;
+  --color-purple: #818cf8;
+  --color-dark-purple: #6366f1;
 }
 
 @layer theme {
@@ -18,5 +19,5 @@
 }
 
 .control-btn {
-  @apply cursor-pointer flex items-center justify-center text-text-hover rounded-md w-10 h-10 md:w-11 md:h-11 border border-indigo-500 shadow-[0_0_0.5rem_#6366f1] hover:border-indigo-700 hover:shadow-[0_0_0.8rem_#818cf8] bg-gradient-to-br;
+  @apply cursor-pointer flex items-center justify-center text-purple rounded-md w-10 h-10 md:w-11 md:h-11 border border-dark-purple shadow-[0_0_0.5rem_#6366f1] hover:border-indigo-700 hover:shadow-[0_0_0.8rem_#818cf8] bg-gradient-to-br;
 }

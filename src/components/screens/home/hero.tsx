@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import { socialsLinks } from '@/constants';
-import { Avatar, AvatarImage } from '../ui/avatar';
+import { smLinks } from './constants';
+import { Avatar, AvatarImage } from '../../ui/avatar';
 
 export const Hero = () => {
   const t = useTranslations('HomePage');
@@ -22,11 +22,11 @@ export const Hero = () => {
         </h1>
       </div>
       <div className="flex flex-col items-center gap-4">
-        <p className="font-light text-text-hover text-base tracking-wide">
+        <p className="font-light text-purple text-base tracking-wide">
           {t('position')}
         </p>
         <div className="flex gap-8">
-          {socialsLinks.map((item) => {
+          {smLinks.map((item) => {
             const Icon = item.icon;
             return (
               <Link

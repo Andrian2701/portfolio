@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 
-import { navLinks } from '@/constants';
+import { navItems } from './constants';
 
 interface Props {
   isMobileView?: boolean;
@@ -22,12 +22,12 @@ export const Navbar = ({ isMobileView = false, handleDrawerClose }: Props) => {
           : 'hidden sm:flex gap-8'
       }
     >
-      {navLinks.map((item) => (
+      {navItems.map((item) => (
         <li key={item.path}>
           <Link
             href={`/${locale}/${item.path}`}
             onClick={handleDrawerClose}
-            className={`${isMobileView ? 'text-lg' : 'text-base'} font-light text-text-secondary hover:text-text-hover`}
+            className={`${isMobileView ? 'text-lg' : 'text-base'} font-light text-text-secondary hover:text-purple`}
           >
             {t(item.path)}
           </Link>

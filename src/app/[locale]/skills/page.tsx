@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 
-import { SkillCard } from '@/components/skills/skill-card';
-import { skills } from '@/constants';
+import { SkillCard } from '@/components/screens/skills/skill-card';
+import { skills } from '@/components/screens/skills/constants';
 
 const Skills = () => {
   const t = useTranslations('SkillsPage');

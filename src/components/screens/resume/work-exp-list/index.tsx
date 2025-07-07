@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const keys = ['work-2', 'work-1'];
 
-export const WorkExperience = () => {
+export const WorkExperienceList = () => {
   const t = useTranslations('ResumePage');
 
   return (
@@ -13,7 +13,7 @@ export const WorkExperience = () => {
           <Link
             href={t(`work.${key}.companyLink`)}
             target="_blank"
-            className="flex items-center gap-2 underline text-text-hover hover:text-indigo-500 font-light text-base tracking-wide min-w-fit"
+            className="flex items-center gap-2 underline text-purple hover:text-dark-purple font-light text-base tracking-wide min-w-fit"
           >
             {t(`work.${key}.company`)}
           </Link>

@@ -1,6 +1,10 @@
 import { useTranslations } from 'next-intl';
 
-import { Education, ResumePdfFile, WorkExperience } from '@/components/resume';
+import {
+  EducationList,
+  ResumePdfFile,
+  WorkExperienceList,
+} from '@/components/screens/resume';
 import { Separator } from '@/components/ui/separator';
 
 const Resume = () => {
@@ -15,13 +19,13 @@ const Resume = () => {
         <h2 className="text-text-primary font-semibold text-lg sm:text-xl tracking-wide">
           {t('workExperience')}
         </h2>
-        <WorkExperience />
+        <WorkExperienceList />
       </div>
       <Separator className="bg-[#dbd9d9]" />
       <h1 className="text-text-primary font-bold text-2xl sm:text-3xl tracking-wide mt-12">
         {t('education')}
       </h1>
-      <Education />
+      <EducationList />
       <Separator className="bg-[#dbd9d9]" />
       <ResumePdfFile />
     </div>

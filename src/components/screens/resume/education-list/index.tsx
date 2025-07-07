@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const keys = ['edu-1'];
 
-export const Education = () => {
+export const EducationList = () => {
   const t = useTranslations('ResumePage');
 
   return (
@@ -14,7 +14,7 @@ export const Education = () => {
           <Link
             href={t(`edu.${key}.eduPlaceLink`)}
             target="_blank"
-            className="text-text-hover hover:text-indigo-500 font-light text-base tracking-wide underline"
+            className="text-purple hover:text-dark-purple font-light text-base tracking-wide underline"
           >
             {t(`edu.${key}.eduPlace`)}
           </Link>

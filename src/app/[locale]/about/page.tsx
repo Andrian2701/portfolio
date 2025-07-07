@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 
-import { AboutPageImage, HobbiesList } from '@/components/about';
+import { MotionImg, HobbiesList } from '@/components/screens/about';
 
 const About = () => {
   const t = useTranslations('AboutPage');
@@ -11,20 +11,20 @@ const About = () => {
         {t('title')}
       </h1>
       <div className="flex flex-col gap-6">
-        <h2 className="text-text-hover font-semibold text-lg sm:text-xl tracking-wide">
+        <h2 className="text-purple font-semibold text-lg sm:text-xl tracking-wide">
           {t('about')}
         </h2>
         <p className="font-light text-base text-text-primary">
           {t('description')}
         </p>
-        <AboutPageImage
+        <MotionImg
           src="/images/about-page-1.jpg"
           alt="About page image 1"
           className="rounded-lg w-full max-w-3xs sm:max-w-xs max-h-1/2 object-cover mx-auto"
         />
       </div>
       <div className="flex flex-col gap-6">
-        <p className="text-text-hover font-semibold text-lg sm:text-xl tracking-wide">
+        <p className="text-purple font-semibold text-lg sm:text-xl tracking-wide">
           {t('myHobbies')}
         </p>
         <p className="font-light text-primary">{t('iLike')}</p>

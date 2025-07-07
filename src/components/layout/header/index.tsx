@@ -16,7 +16,7 @@ export const Header = () => {
           href={`/${locale}`}
           className="flex items-center gap-2 text-sm sm:text-lg tracking-wide"
         >
-          <FaTerminal className="text-text-hover" />
+          <FaTerminal className="text-purple" />
           <span className="font-bold text-text-primary">{t('logo')}</span>
         </Link>
         <Navbar />

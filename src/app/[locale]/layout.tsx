@@ -5,8 +5,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Providers } from '../../providers';
 import { LocaleType } from '@/types';
-import { Header } from '@/components/layout/header';
-import { Footer } from '@/components/layout/footer';
+import { Header, Footer } from '@/components/layout';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });

@@ -1,10 +1,10 @@
 import { GiSplash } from 'react-icons/gi';
 import { GiSplashyStream } from 'react-icons/gi';
 
-import { ThemeSwitch } from './theme-switch';
 import { useAppBackground } from '@/providers/app-background-provider';
-import { LocaleSwitch } from './locale-switch';
 import { AppBackgroundEnum } from '../../types';
+import { LocaleSwitch } from './locale-switch';
+import { ThemeSwitch } from './theme-switch';
 
 export const AppControl = () => {
   const { setAppBackground } = useAppBackground();
