@@ -1,16 +1,19 @@
-import Image from 'next/image';
+import { IconType } from 'react-icons/lib';
 
-export const SkillCard = ({ image, text }: { image: string; text: string }) => {
+interface Props {
+  icon: IconType | string;
+  text: string;
+}
+
+export const SkillCard = ({ icon, text }: Props) => {
+  const Icon = icon;
+
   return (
-    <div className="flex flex-col items-center gap-2">
-      <Image
-        src={image}
-        alt={text}
-        width={35}
-        height={35}
-        className="object-contain"
-      />
-      <p className="text-sm font-light text-primary">{text}</p>
-    </div>
+    <li className="flex flex-col items-center justify-center gap-2 min-h-[130px] border border-text-secondary text-text-hover dark:hover:text-white dark:border-text-hover p-8 rounded-lg cursor-pointer dark:shadow-[0_0_0.5rem_#6366f1] transform transition duration-500 ease-in-out hover:-translate-y-2 dark:hover:bg-text-hover">
+      {typeof icon !== 'string' && <Icon className="w-8 h-8" />}
+      <p className="font-bold text-text-primary text-base text-center sm:text-lg">
+        {text}
+      </p>
+    </li>
   );
 };

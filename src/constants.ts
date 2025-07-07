@@ -2,6 +2,16 @@ import { FaTelegramPlane } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 import { IconType } from 'react-icons/lib';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { FaHtml5 } from 'react-icons/fa';
+import { FaCss3Alt } from 'react-icons/fa';
+import { FaJsSquare } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
+import { SiRedux } from 'react-icons/si';
+import { SiReactquery } from 'react-icons/si';
+import { SiTailwindcss } from 'react-icons/si';
+import { FaGitAlt } from 'react-icons/fa';
+import { FaDocker } from 'react-icons/fa';
+import { SiFirebase } from 'react-icons/si';
 
 interface NavLink {
   name: string;
@@ -48,60 +58,27 @@ export const socialsLinks: SocialsLink[] = [
 ];
 
 interface SkillItem {
-  img: string;
+  icon: IconType | string;
   text: string;
 }
 
-interface SkillCategory {
-  title: string;
-  data: SkillItem[];
-}
-
-export const skills: SkillCategory[] = [
-  {
-    title: 'Languages',
-    data: [
-      { img: '/assets/skills/js.png', text: 'JavaScript' },
-      { img: '/assets/skills/ts.svg', text: 'TypeScript' },
-      { img: '/assets/skills/css.svg', text: 'CSS' },
-      { img: '/assets/skills/html.webp', text: 'HTML' },
-    ],
-  },
-  {
-    title: 'Frameworks',
-    data: [
-      { img: '/assets/skills/next.svg', text: 'Next' },
-      { img: '/assets/skills/angular.png', text: 'Angular' },
-    ],
-  },
-  {
-    title: 'Libraries',
-    data: [
-      { img: '/assets/skills/react.webp', text: 'React' },
-      { img: '/assets/skills/redux.svg', text: 'Redux' },
-      { img: '/assets/skills/tanstack.png', text: 'React Query' },
-      { img: '/assets/skills/zustand.jpeg', text: 'Zustand' },
-      { img: '/assets/skills/rx.svg', text: 'RxJS' },
-    ],
-  },
-  {
-    title: 'UI Libraries',
-    data: [
-      { img: '/assets/skills/tailwind.png', text: 'Tailwind' },
-      { img: '/assets/skills/mui.png', text: 'Material UI' },
-      { img: '/assets/skills/shadcn.png', text: 'Shadcn' },
-      { img: '/assets/skills/scss.png', text: 'SCSS' },
-    ],
-  },
-  {
-    title: 'Tools',
-    data: [
-      { img: '/assets/skills/vs.png', text: 'VS Code' },
-      { img: '/assets/skills/git.webp', text: 'Git' },
-      { img: '/assets/skills/github.png', text: 'GitHub' },
-      { img: '/assets/skills/docker.webp', text: 'Docker' },
-      { img: '/assets/skills/docker.webp', text: 'Docker compose' },
-      { img: '/assets/skills/firebase.png', text: 'Firebase' },
-    ],
-  },
+export const skills: SkillItem[] = [
+  { icon: FaHtml5, text: 'HTML' },
+  { icon: FaCss3Alt, text: 'CSS' },
+  { icon: '', text: 'SCSS' },
+  { icon: FaJsSquare, text: 'JavaScript' },
+  { icon: '', text: 'TypeScript' },
+  { icon: FaReact, text: 'React' },
+  { icon: '', text: 'Next.js' },
+  { icon: SiRedux, text: 'Redux' },
+  { icon: '', text: 'Zustand' },
+  { icon: SiReactquery, text: 'React Query' },
+  { icon: '', text: 'React Hook Form' },
+  { icon: SiTailwindcss, text: 'Tailwind' },
+  { icon: '', text: 'Material UI' },
+  { icon: '', text: 'Shadcn UI' },
+  { icon: FaGitAlt, text: 'Git' },
+  { icon: FaDocker, text: 'Docker' },
+  { icon: SiFirebase, text: 'Firebase' },
+  { icon: '', text: 'RestApi' },
 ];
