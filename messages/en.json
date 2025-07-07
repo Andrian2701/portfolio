@@ -12,24 +12,13 @@
   "AboutPage": {
     "title": "Hi. I'm Andrian",
     "about": "About",
-    "description": "I'm a frontend developer, with experience in building responsive, high-performance web applications. I'm a native Ukrainian speaker with English as my second language",
-    "extendedVersion": "Extended version",
-    "whereImFrom": "Where I'm from?",
-    "whereImFromDescription": "I was born in Tlumach, Ukraine, but grew up in Kolomyia until the age of 2. Afterwards, I moved to Lviv, where I attended primary, secondary, and high school. After graduating, I enrolled at Lviv Polytechnic University, where I am still studying while working as a Frontend developer.",
-    "preferences": "My preferences?",
+    "description": "I'm a Frontend Developer focused on delivering scalable web solutions tailored to business needs. I'm familiar with the modern development process, particularly the frontend development lifecycle, and experienced in working within Agile methodologies, contributing as a team player. Currently, I'm working as a Trainee Frontend Developer at GlobalLogic and starting my fourth year at Lviv Polytechnic University.",
+    "myHobbies": "My hobbies",
     "iLike": "I like...",
-    "preferencesList": {
-      "sports": "Exercising",
-      "culture": "Japanese culture",
-      "nature": "Spending time in nature",
-      "saturdays": "Weekends",
-      "music": "Nelly Furtado x Quarterhead - All Good Things"
-    },
-    "dislikes": "My dislikes?",
-    "iDislike": "I dont't like...",
-    "dislikesList": {
-      "cold": "Cold",
-      "alarm": "Waking up to an alarm"
+    "hobbiesList": {
+      "spendingTimeOutdoors": "Spending time outdoors",
+      "doingSport": "Doing sport and watching football, boxing",
+      "listenToMusic": "Listen to music"
     }
   },
   "NotFoundPage": {

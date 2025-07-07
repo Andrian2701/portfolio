@@ -12,7 +12,7 @@ export const Hero = () => {
       <div className="flex flex-col items-center gap-8">
         <Avatar className="w-52 h-52 sm:w-60 sm:h-60">
           <AvatarImage
-            src="/assets/me/profile.jpeg"
+            src="/images/hero.jpeg"
             alt={t('name')}
             className="w-full h-full object-cover"
           />

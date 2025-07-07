@@ -1,13 +1,13 @@
 import { useTranslations } from 'next-intl';
 
-export const PreferenceList = ({ isLike = false }: { isLike?: boolean }) => {
+export const HobbiesList = () => {
   const t = useTranslations('AboutPage');
 
-  const listKey = isLike ? 'preferencesList' : 'dislikesList';
+  const listKey = 'hobbiesList';
   const itemKeys = Object.keys(t.raw(listKey));
 
   return (
-    <ul className="list-disc font-light text-primary ml-10">
+    <ul className="list-disc marker:text-text-hover font-light text-text-primary ml-10 text-base">
       {itemKeys.map((key) => (
         <li key={key}>{t(`${listKey}.${key}`)}</li>
       ))}

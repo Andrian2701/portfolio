@@ -1,9 +1,37 @@
-import { AboutContainer } from '@/components/about/about-container';
+import { useTranslations } from 'next-intl';
 
-const About = () => (
-  <div className="w-full max-w-[800px] text-left p-5 mx-auto flex-auto flex flex-col gap-8">
-    <AboutContainer />
-  </div>
-);
+import { AboutPageImage, HobbiesList } from '@/components/about';
+
+const About = () => {
+  const t = useTranslations('AboutPage');
+
+  return (
+    <div className="w-full max-w-[800px] text-left p-5 mx-auto flex-auto flex flex-col gap-8 z-20">
+      <h1 className="text-primary font-bold text-[30px] sm:text-[37px] tracking-wide mt-12">
+        {t('title')}
+      </h1>
+      <div className="flex flex-col gap-6">
+        <h2 className="text-text-hover font-semibold text-lg sm:text-xl tracking-wide">
+          {t('about')}
+        </h2>
+        <p className="font-light text-base text-text-primary">
+          {t('description')}
+        </p>
+        <AboutPageImage
+          src="/images/about-page-1.jpg"
+          alt="About page image 1"
+          className="rounded-lg w-full max-w-3xs sm:max-w-xs max-h-1/2 object-cover mx-auto"
+        />
+      </div>
+      <div className="flex flex-col gap-6">
+        <p className="text-text-hover font-semibold text-lg sm:text-xl tracking-wide">
+          {t('myHobbies')}
+        </p>
+        <p className="font-light text-primary">{t('iLike')}</p>
+        <HobbiesList />
+      </div>
+    </div>
+  );
+};
 
 export default About;

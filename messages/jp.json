@@ -12,24 +12,13 @@
   "AboutPage": {
     "title": "こんにちは。アンドリアンです。",
     "about": "概要",
-    "description": "私はフロントエンド開発者で、レスポンシブで高性能なWebアプリケーションの構築経験があります。私はウクライナ語を母語とし、英語を第二言語としています",
-    "extendedVersion": "詳細バージョン",
-    "whereImFrom": "出身地は？",
-    "whereImFromDescription": "私はウクライナのトルマチで生まれましたが、2歳までコロミヤで育ちました。その後、リヴィウに引っ越し、そこで小学校、中学校、高校を卒業しました。卒業後、リヴィウ工科大学に入学し、現在もフロントエンド開発者として働きながら勉強を続けています。",
-    "preferences": "私の好みは？",
-    "iLike": "好きです...",
-    "preferencesList": {
-      "sports": "運動すること",
-      "culture": "日本文化",
-      "nature": "自然の中で過ごすこと",
-      "saturdays": "週末",
-      "music": "Nelly Furtado x Quarterhead - All Good Things"
-    },
-    "dislikes": "私の苦手なことは？",
-    "iDislike": "私は好きではありません...",
-    "dislikesList": {
-      "cold": "寒さ",
-      "alarm": "目覚まし時計で起きること"
+    "description": "私はフロントエンド開発者として、ビジネスニーズに合わせたスケーラブルなWebソリューションの提供に注力しています。モダンな開発プロセス、特にフロントエンド開発のライフサイクルに精通しており、アジャイル手法のもとでチームの一員として貢献した経験があります。現在、GlobalLogicでフロントエンド開発の研修生として働いており、リヴィウ工科大学の4年目に在学中です。",
+    "myHobbies": "私の趣味",
+    "iLike": "私は好き...",
+    "hobbiesList": {
+      "spendingTimeOutdoors": "外で過ごすこと",
+      "doingSport": "スポーツをすること、サッカーやボクシングを見ること",
+      "listenToMusic": "音楽を聴くこと"
     }
   },
   "NotFoundPage": {
