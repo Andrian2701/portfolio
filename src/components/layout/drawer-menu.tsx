@@ -20,12 +20,12 @@ export const DrawerMenu = () => {
 
   return (
     <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
-      <DrawerTrigger className="text-2xl sm:hidden text-text-secondary hover:text-text-hover cursor-pointer">
+      <DrawerTrigger className="text-3xl sm:hidden text-text-secondary hover:text-text-hover cursor-pointer">
         <LuMenu aria-label="Open menu" />
       </DrawerTrigger>
       <DrawerContent>
         <DrawerTitle className="sr-only">Navigation menu</DrawerTitle>
-        <DrawerClose className="fixed top-4 right-4 text-2xl text-text-secondary hover:text-text-hover cursor-pointer">
+        <DrawerClose className="fixed top-4 right-4 text-3xl text-text-secondary hover:text-text-hover cursor-pointer">
           <IoCloseOutline aria-label="Close menu" />
         </DrawerClose>
         <Navbar isMobileView handleDrawerClose={handleDrawerClose} />

@@ -7,7 +7,7 @@ const About = () => {
 
   return (
     <div className="w-full max-w-[800px] text-left p-5 mx-auto flex-auto flex flex-col gap-8 z-20">
-      <h1 className="text-primary font-bold text-[30px] sm:text-[37px] tracking-wide mt-12">
+      <h1 className="text-text-primary font-bold text-2xl sm:text-3xl tracking-wide mt-12">
         {t('title')}
       </h1>
       <div className="flex flex-col gap-6">
